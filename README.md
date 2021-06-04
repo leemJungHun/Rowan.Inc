@@ -5,4 +5,8 @@
 - [Kotlin](Kotlin.md)
 - [Resource](Resource.md)
 - [Gradle](Gradle.md)
-- [Architecture](Architecture.md) 이렇구나하고 알고만 있을것. 로완에 맞게 수정될 예정.
+- [Architecture](Architecture.md) 
+
+```
+[2021.06.04] 아직은 이렇구나하고 알고만 있을것. 로완에 맞게 수정될 예정.
+```
