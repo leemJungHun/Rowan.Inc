@@ -109,14 +109,14 @@
 - `<WHERE>_<DESCRIPTION>_<WHAT>`
 
 ### Margin/Padding
-- 대부분의 `margin/padding`은 아래 정의된 `space_xxx`로만 사용되도록 한다.
+- 대부분의 `margin/padding`은 아래 정의된 `dp_`로만 사용되도록 한다.
+- 텍스트는 `sp_`로만 사용되도록 한다.
 ```xml
-<dimen name="space_x_small">8dp</dimen>  
-<dimen name="space_small">12dp</dimen>  
-<dimen name="space_median">16dp</dimen>  
-<dimen name="space_s_large">18dp</dimen>  
-<dimen name="space_large">20dp</dimen>  
-<dimen name="space_x_large">24dp</dimen>
+<dimen name="dp_8">8dp</dimen>  
+<dimen name="dp_12">12dp</dimen>  
+<dimen name="dp_16">16dp</dimen>  
+<dimen name="dp_18">18dp</dimen>  
+<dimen name="sp_20">20sp</dimen>  
 ```
 - 그외에 특정 화면에서 위의 값을 따르지 않는경우, `<WHERE>_<DESCRIPTION>_<WHAT>`의 규칙으로 만든다.
 ```xml
