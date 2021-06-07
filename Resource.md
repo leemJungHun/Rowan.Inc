@@ -37,20 +37,20 @@
 ### WHAT
 | View | Prefix |
 | ------------- | ------------- |
-| TextView | `tv_` |
-| ImageView | `iv_` |
-| CheckBox | `cb_` |
-| RecyclerView | `rv_` |
-| EditText | `et_` |
-| ProgressBar | `pb_` |
-| FrameLayout | `fl_` |
+| TextView | `_TxtView` |
+| ImageView | `_ImgView` |
+| CheckBox | `_CheckBox` |
+| RecyclerView | `_ListView` |
+| EditText | `_EditText` |
+| ProgressBar | `_ProgressBar` |
+| FrameLayout | `_FrameLayout` |
 | NestedScrollView | `nsv_` |
-| Space | `space_` |
+| Space | `_Space` |
 | Switch | `switch` |
 | AbcDeFgh | `adf_` |
 | Abcdef | `abcdef_` |
-| MyCustomView | `my_custom_view` |
-| YourView | `your_view` |
+| MyCustomView | `myCustomView` |
+| YourView | `yourView` |
 
 
 ### 기타
@@ -59,10 +59,10 @@
 (Button, ImageButton은 존재의 의미가 없음)
 
 ### 예시
-- `iv_close`: 닫기 ImageView
-- `tv_select`: 선택 TextView
-- `rv_car_list`: 자동차 목록 RecyclerView
-- `view_etc_model`: 기타 모델 화면 LinearLayout
+- `closeImgView`: 닫기 ImageView
+- `selectTxtView`: 선택 TextView
+- `answerListView`: 정답 보기 목록 RecyclerView
+- `modelEtcView`: 기타 모델 화면 LinearLayout
 
 ## Drawable
 - `<WHAT>(_<WHERE>)_<DESCRIPTION>(_<SIZE>)`
