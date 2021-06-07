@@ -44,11 +44,8 @@
 | EditText | `_EditText` |
 | ProgressBar | `_ProgressBar` |
 | FrameLayout | `_FrameLayout` |
-| NestedScrollView | `nsv_` |
 | Space | `_Space` |
 | Switch | `switch` |
-| AbcDeFgh | `adf_` |
-| Abcdef | `abcdef_` |
 | MyCustomView | `myCustomView` |
 | YourView | `yourView` |
 
