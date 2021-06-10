@@ -21,21 +21,21 @@
 - `layout_comb`: 재사용되는 벌집깨기 layout
 
 ## ID
-- `<WHAT>_<DESCRIPTION>`
-- View의 대문자를 축약하여 `<WHAT>`의 Prefix로 사용한다.
+- `<DESCRIPTION><WHAT>`
+- View의 대문자를 축약하여 `<WHAT>`의 Suffix로 사용한다.
 - 아래 이름규칙을 적용한다.
 1. Android의 View는 CamelCase의 대문자를 축약한 형태로 정한다.
-</br>: `TextView -> tv_`
+</br>: `TextView -> _txtView`
 2. 만약 View의 이름이 Space, Switch와 같이 1개의 대문자만 존재한다면 모두 소문자인 아이디로 정한다.
-</br>: `Switch -> switch_`
+</br>: `Switch -> _Switch`
 3. CustomView는 전체View의 이름을 snake case이름으로 정한다.
-</br>: `MyCustomView -> my_custom_view`
-</br>(만약 1개의 xml에 같은 여러 CustomView가 존재한다면 `<WHAT>_<DESCRIPTION>`의 형태로 정한다.)
+</br>: `MyCustomView -> myCustomView`
+</br>(만약 1개의 xml에 같은 여러 CustomView가 존재한다면 `<DESCRIPTION><WHAT>`의 형태로 정한다.)
 4. 아래표에 해당 View의 Prefix가 정의되어 있지 않다면 팀에서 상의해서 이름을 정한뒤 추가한다.
 
 
 ### WHAT
-| View | Prefix |
+| View | Suffix |
 | ------------- | ------------- |
 | TextView | `_TxtView` |
 | ImageView | `_ImgView` |
@@ -51,7 +51,7 @@
 
 
 ### 기타
-- 해당 View를 특정기능과 상관없이 `VISIBLE/GONE`등의 View의 용도로 사용한다면 `view_xxx`로 사용하는것도 허용한다.
+- 해당 View를 특정기능과 상관없이 `VISIBLE/GONE`등의 View의 용도로 사용한다면 `xxxView`로 사용하는것도 허용한다.
 - 버튼기능을 위한 View는 ImageView, TextView로만 사용한다.
 (Button, ImageButton은 존재의 의미가 없음)
 
@@ -59,7 +59,7 @@
 - `closeImgView`: 닫기 ImageView
 - `selectTxtView`: 선택 TextView
 - `answerListView`: 정답 보기 목록 RecyclerView
-- `modelEtcView`: 기타 모델 화면 LinearLayout
+- `modelEtcView`: 기타 모델 화면 ConstraintLayout
 
 ## Drawable
 - `<WHAT>(_<WHERE>)_<DESCRIPTION>(_<SIZE>)`
