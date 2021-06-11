@@ -14,4 +14,5 @@
 > ### 즉, 지속적 배포이다.   
 > ### 짧은 주기로 개발 중인 소프트웨어를 배포하고 그 과정을 자동화하겠다는 뜻.
 
-- [Jenkins & Docker](android/study/Jenkins & Docker.md)
+- [Jenkins](android/study/Jenkins.md)
+- [Docker](android/study/Docker.md)
