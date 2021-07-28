@@ -14,7 +14,8 @@
 - 아래의 경우는 모두 동일하게 작성한다.
  ```kotlin
    // 바인딩 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: XxxYyyZzzBinding
+    ex)private lateinit var binding: ActivityMainBinding
    // 뷰모델
     private val mainViewModel: MainViewModel by viewModels()
    // Hilt @Inject    
