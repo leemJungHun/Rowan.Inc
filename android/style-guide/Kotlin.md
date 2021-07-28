@@ -200,7 +200,7 @@ private fun isUnchekced(): Boolean {
  ```kotlin
   private var mUserId: String? = null
  ```
-- 외부에서 접근가능한 public 변수, 함수의 argument나 함수 내부의 변수에는 m을 붙이지 않는다.
+- 외부에서 접근가능한 public 변수, @Inject 변수, 함수의 argument나 함수 내부의 변수에는 m을 붙이지 않는다.
  ```kotlin
   var userId: String? = null
  ```
