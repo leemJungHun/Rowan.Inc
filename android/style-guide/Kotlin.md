@@ -11,14 +11,6 @@
   // 토큰
   private val mToken = "adfeq-qj2398198f-2e89128318fasdsa-sdf8723hfi2kvf"
  ```
-- 클래스의 private 변수에는 m을 붙인다.
- ```kotlin
-  private var mUserId: String? = null
- ```
-- 외부에서 접근가능한 public 변수, @Inject 변수, 함수의 argument나 함수 내부의 변수에는 m을 붙이지 않는다.
- ```kotlin
-  var userId: String? = null
- ```
 - 아래의 경우는 모두 동일하게 작성한다.
  ```kotlin
    // 바인딩 
