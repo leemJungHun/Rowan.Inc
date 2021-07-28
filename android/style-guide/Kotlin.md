@@ -2,6 +2,34 @@
  
 <h4>아래 정의되어 있는 가이드를 제외하고는 <a href="https://kotlinlang.org/docs/coding-conventions.html">Kotlin coding conventions</a>와 <a href="https://developer.android.com/kotlin/style-guide?hl=ko">Kotlin 스타일 가이드</a>를 따른다.<h4>
 
+ 
+## 변수
+- 변수명은 어떤의미인지 파악하기 쉽게 작성하고 CamelCase를 사용한다.
+ ```kotlin
+  // 유저이름
+  private var mUserName: String? = null
+  // 토큰
+  private val mToken = "adfeq-qj2398198f-2e89128318fasdsa-sdf8723hfi2kvf"
+ ```
+- 클래스의 private 변수에는 m을 붙인다.
+ ```kotlin
+  private var mUserId: String? = null
+ ```
+- 외부에서 접근가능한 public 변수, @Inject 변수, 함수의 argument나 함수 내부의 변수에는 m을 붙이지 않는다.
+ ```kotlin
+  var userId: String? = null
+ ```
+- 아래의 경우는 모두 동일하게 작성한다.
+ ```kotlin
+   // 바인딩 
+    private lateinit var binding: ActivityMainBinding
+   // 뷰모델
+    private val mainViewModel: MainViewModel by viewModels()
+   // Hilt @Inject    
+    @Inject
+    lateinit var sharedPref: SharedPrefDataStorage
+ ```
+ 
 ## Parameter/Argument
 ### Parameter 순서
 - Context 류의 parameter를 가장 앞에 위치한다.(Context, Activity, Fragment, View 등)
@@ -187,34 +215,6 @@ private fun isUnchekced(): Boolean {
         return !isChecked()
 }
 ```
- 
-## 변수
-- 변수명은 어떤의미인지 파악하기 쉽게 작성하고 CamelCase를 사용한다.
- ```kotlin
-  // 유저이름
-  private var mUserName: String? = null
-  // 토큰
-  private val mToken = "adfeq-qj2398198f-2e89128318fasdsa-sdf8723hfi2kvf"
- ```
-- 클래스의 private 변수에는 m을 붙인다.
- ```kotlin
-  private var mUserId: String? = null
- ```
-- 외부에서 접근가능한 public 변수, @Inject 변수, 함수의 argument나 함수 내부의 변수에는 m을 붙이지 않는다.
- ```kotlin
-  var userId: String? = null
- ```
-- 아래의 경우는 모두 동일하게 작성한다.
- ```kotlin
-   // 바인딩 
-    private lateinit var binding: ActivityMainBinding
-   // 뷰모델
-    private val mainViewModel: MainViewModel by viewModels()
-   // Hilt @Inject    
-    @Inject
-    lateinit var sharedPref: SharedPrefDataStorage
- ```
- 
 
 ## 기타
 - `import static xx.xx.xx;`는 사용하지 않는다. ([Avoid static imports](https://carlosbecker.com/posts/avoid-static-imports/))
