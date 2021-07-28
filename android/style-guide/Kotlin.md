@@ -204,6 +204,17 @@ private fun isUnchekced(): Boolean {
  ```kotlin
   var userId: String? = null
  ```
+- 아래의 경우는 모두 동일하게 작성한다.
+ ```kotlin
+   // 바인딩 
+    private lateinit var binding: ActivityMainBinding
+   // 뷰모델
+    private val mainViewModel: MainViewModel by viewModels()
+   // Hilt @Inject    
+    @Inject
+    lateinit var sharedPref: SharedPrefDataStorage
+ ```
+ 
 
 ## 기타
 - `import static xx.xx.xx;`는 사용하지 않는다. ([Avoid static imports](https://carlosbecker.com/posts/avoid-static-imports/))
