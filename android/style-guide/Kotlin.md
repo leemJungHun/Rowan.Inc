@@ -187,6 +187,23 @@ private fun isUnchekced(): Boolean {
         return !isChecked()
 }
 ```
+ 
+## 변수
+- 변수명은 어떤의미인지 파악하기 쉽게 작성하고 CamelCase를 사용한다.
+ ```kotlin
+  // 유저이름
+  private var mUserName: String? = null
+  // 토큰
+  private val mToken = "adfeq-qj2398198f-2e89128318fasdsa-sdf8723hfi2kvf"
+ ```
+- 클래스의 private 변수에는 m을 붙인다.
+ ```kotlin
+  private var mUserId: String? = null
+ ```
+- 외부에서 접근가능한 public 변수에는 m을 붙이지 않는다.
+ ```kotlin
+  var userId: String? = null
+ ```
 
 ## 기타
 - `import static xx.xx.xx;`는 사용하지 않는다. ([Avoid static imports](https://carlosbecker.com/posts/avoid-static-imports/))
