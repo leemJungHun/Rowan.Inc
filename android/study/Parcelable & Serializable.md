@@ -108,4 +108,10 @@ intent.getParcelableExtra<User>("user")?.let { u ->
     println("이름은 : ${u.name} 그리고 나이는 : ${u.age}")
 }
 ```
-`이상입니다.`
+`
+Parcelable 플러그인을 사용하면 Parcelable을 보다 쉽게 Serializable처럼 사용 가능하겠습니다.
+성능면에서도 조금은 우위가 있다고 하니 조금이라도 성능개선을 하시려는 분에게는 도움이 되지 않을까 싶습니다.
+사용법에는 큰 차이가 없으니 본인이 원하는 방법을 선택하시면 될 거 같습니다.
+
+이상입니다.
+`
