@@ -96,7 +96,14 @@ startActivity(intent)
 finish()
 
 // MainActivity.kt
-intent.getParcelableExtra<User>("user") // T? 이기 때문에 let을 사용하면 좋습니다.
+// Serializable
+val user = intent.getSerializableExtra("user") as User?
+user?.let { u ->
+    println("이름은 : ${u.name} 그리고 나이는 : ${u.age}")
+}
+
+//Parcelable
+// 반환형이 T? 이기 때문에 let을 사용하면 좋습니다.
 intent.getParcelableExtra<User>("user")?.let { u ->
     println("이름은 : ${u.name} 그리고 나이는 : ${u.age}")
 }
