@@ -1,5 +1,6 @@
 # What is Parcelable and Serializable
 ___Android 에서 Activity 간 이동이나 다른 앱으로 Component 이동 시 Intent를 사용한다.   
+이런 경우 데이터 객체를 같이 전달해야하는 경우가 새인다.   
 이 때 데이터 객체 즉, Class를 직렬화 하는 부분을 추가하여 사용하는데, Parcelizable 과 Serializable을 사용한다.___
 * 개발자 편의성 측면에서는 Serializable이
 * 런타임시 성능 측면에서는 Parcelable 낫다고 함.
